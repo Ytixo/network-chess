@@ -1,0 +1,217 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="i-DPC8couUTYfvGhnEiH" name="Page-1">
+    <mxGraphModel grid="0" page="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="h1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontStyle=1;fontSize=11;" value="Client1" vertex="1">
+          <mxGeometry height="40" width="100" x="80" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="h2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontStyle=1;fontSize=11;" value="Serveur" vertex="1">
+          <mxGeometry height="40" width="120" x="520" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="h3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontStyle=1;fontSize=11;" value="Client2" vertex="1">
+          <mxGeometry height="40" width="100" x="950" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" edge="1" parent="1" style="endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="60" as="sourcePoint" />
+            <mxPoint x="130" y="1340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l2" edge="1" parent="1" style="endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="60" as="sourcePoint" />
+            <mxPoint x="580" y="1340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l3" edge="1" parent="1" style="endArrow=none;dashed=1;strokeColor=#000000;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1000" y="60" as="sourcePoint" />
+            <mxPoint x="1000" y="1340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t_init1" parent="1" style="text;html=1;fontSize=10;fontStyle=1;align=left;" value="Initialisation :" vertex="1">
+          <mxGeometry height="16" width="90" x="30" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="t_init1b" parent="1" style="text;html=1;fontSize=10;align=left;" value="Création socket UDP" vertex="1">
+          <mxGeometry height="16" width="120" x="30" y="91" as="geometry" />
+        </mxCell>
+        <mxCell id="t_init2" parent="1" style="text;html=1;fontSize=10;fontStyle=1;align=left;" value="Initialisation :" vertex="1">
+          <mxGeometry height="16" width="90" x="463" y="67" as="geometry" />
+        </mxCell>
+        <mxCell id="t_init2b" parent="1" style="text;html=1;fontSize=10;align=left;" value="Création socket UDP" vertex="1">
+          <mxGeometry height="16" width="130" x="463" y="83" as="geometry" />
+        </mxCell>
+        <mxCell id="t_init2c" parent="1" style="text;html=1;fontSize=10;align=left;" value="s.bind(0.0.0.0, 6767)" vertex="1">
+          <mxGeometry height="16" width="130" x="463" y="99" as="geometry" />
+        </mxCell>
+        <mxCell id="t_init3" parent="1" style="text;html=1;fontSize=10;fontStyle=1;align=left;" value="Initialisation :" vertex="1">
+          <mxGeometry height="16" width="90" x="898" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="t_init3b" parent="1" style="text;html=1;fontSize=10;align=left;" value="Création socket UDP" vertex="1">
+          <mxGeometry height="16" width="120" x="898" y="91" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" edge="1" parent="1" style="endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;" value="sendto(pseudo)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="165" as="sourcePoint" />
+            <mxPoint x="580" y="165" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a2" edge="1" parent="1" style="endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;" value="&quot;Tu es bien connecté&quot; + &quot;En attente d&#39;un adversaire...&quot;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="185" as="sourcePoint" />
+            <mxPoint x="130" y="185" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a3" edge="1" parent="1" style="endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;" value="sendto(pseudo)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1000" y="215" as="sourcePoint" />
+            <mxPoint x="580" y="215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a4" edge="1" parent="1" style="endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;" value="&quot;Tu es bien connecté&quot; + &quot;En attente d&#39;un adversaire...&quot;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="235" as="sourcePoint" />
+            <mxPoint x="1000" y="235" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="note_pair" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;fontStyle=2;" value="2 joueurs en attente → création partie(joueur1, joueur2, id_partie)&#xa;Thread dédié + Grid().InitBoard()" vertex="1">
+          <mxGeometry height="40" width="420" x="370" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="a5" edge="1" parent="1" style="endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;" value="&quot;La partie va commencer contre Client2&quot;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="320" as="sourcePoint" />
+            <mxPoint x="130" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a6" edge="1" parent="1" style="endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;" value="&quot;La partie va commencer contre Client1&quot;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="340" as="sourcePoint" />
+            <mxPoint x="1000" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="loop_box" parent="1" style="swimlane;startSize=20;fillColor=#ffffff;strokeColor=#000000;fontSize=10;fontStyle=1;" value="Tant que (la partie n&#39;est pas stoppée)" vertex="1">
+          <mxGeometry height="940" width="1090" x="60" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="b1" edge="1" parent="loop_box" style="endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;" value="sendto(grid.afficher(flip=True)) → plateau">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="40" as="sourcePoint" />
+            <mxPoint x="70" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b2" edge="1" parent="loop_box" style="endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;" value="sendto(grid.afficher(flip=False)) → plateau">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="60" as="sourcePoint" />
+            <mxPoint x="940" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="note_draw1" parent="loop_box" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;fontStyle=2;" value="maj_plateau() → dessiner_echiquier()" vertex="1">
+          <mxGeometry height="26" width="180" x="20" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="note_draw2" parent="loop_box" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;fontStyle=2;" value="maj_plateau() → dessiner_echiquier()" vertex="1">
+          <mxGeometry height="26" width="180" x="890" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" edge="1" parent="loop_box" style="endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;" value="&quot;TON_TOUR : Quelle pièce veux-tu bouger ?&quot;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="130" as="sourcePoint" />
+            <mxPoint x="70" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b3b" edge="1" parent="loop_box" style="endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;dashed=1;" value="&quot;ATTENDRE : c&#39;est le tour de Client1&quot;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="150" as="sourcePoint" />
+            <mxPoint x="940" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="note_input1" parent="loop_box" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;fontStyle=2;" value="inp = input() (case origine)" vertex="1">
+          <mxGeometry height="26" width="160" x="10" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="b4" edge="1" parent="loop_box" style="endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;" value="sendto(inp)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="70" y="220" as="sourcePoint" />
+            <mxPoint x="520" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="alt_box" parent="loop_box" style="swimlane;startSize=20;fillColor=#ffffff;strokeColor=#000000;fontSize=10;fontStyle=1;" value="alt : inp == &quot;stop&quot;" vertex="1">
+          <mxGeometry height="120" width="1040" x="20" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="c_stop1" edge="1" parent="alt_box" style="endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;" value="&quot;Partie stoppée.&quot;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="40" as="sourcePoint" />
+            <mxPoint x="50" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c_stop2" edge="1" parent="alt_box" style="endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;" value="&quot;Partie stoppée.&quot;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="60" as="sourcePoint" />
+            <mxPoint x="920" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="note_exit" parent="alt_box" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;fontStyle=2;" value="Fin de boucle : retour à l&#39;accueil / fermeture" vertex="1">
+          <mxGeometry height="26" width="260" x="380" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="else_label" parent="loop_box" style="text;html=1;fontSize=10;fontStyle=2;align=left;" value="sinon : on continue le traitement du coup" vertex="1">
+          <mxGeometry height="16" width="320" x="20" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="b5" edge="1" parent="loop_box" style="endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;" value="&quot;Sur quelle case veux-tu l&#39;emmener ?&quot;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="410" as="sourcePoint" />
+            <mxPoint x="70" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="note_input2" parent="loop_box" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;fontStyle=2;" value="out = input() (case destination)" vertex="1">
+          <mxGeometry height="26" width="170" x="10" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="b6" edge="1" parent="loop_box" style="endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;" value="sendto(out)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="70" y="480" as="sourcePoint" />
+            <mxPoint x="520" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="valid_box" parent="loop_box" style="swimlane;startSize=20;fillColor=#ffffff;strokeColor=#000000;fontSize=10;fontStyle=1;" value="Validation serveur (Grid)" vertex="1">
+          <mxGeometry height="180" width="1040" x="20" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="v1" parent="valid_box" style="text;html=1;fontSize=10;align=left;" value="ResolveTile(inp) / ResolveTile(out) → None ?" vertex="1">
+          <mxGeometry height="16" width="320" x="350" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="v1_msg" edge="1" parent="valid_box" style="endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;dashed=1;" value="si oui → &quot;Coup illégal, cases invalides.&quot; (boucle reprend)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="55" as="sourcePoint" />
+            <mxPoint x="60" y="55" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v2" parent="valid_box" style="text;html=1;fontSize=10;align=left;" value="grid.grid[res].ColorPresent != color_playing ?" vertex="1">
+          <mxGeometry height="16" width="340" x="340" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="v2_msg" edge="1" parent="valid_box" style="endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;dashed=1;" value="si oui → &quot;Jouez un coup avec vos pièces !&quot; (boucle reprend)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="105" as="sourcePoint" />
+            <mxPoint x="60" y="105" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v3" parent="valid_box" style="text;html=1;fontSize=10;align=left;" value="CanMove(inp, out) == False ?" vertex="1">
+          <mxGeometry height="16" width="260" x="380" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="v3_msg" edge="1" parent="valid_box" style="endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;dashed=1;" value="si oui → &quot;Coup illégal.&quot; (boucle reprend)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="155" as="sourcePoint" />
+            <mxPoint x="60" y="155" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="note_update" parent="loop_box" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;fontStyle=2;" value="Sinon : grid.UpdateBoard(res(inp), res(out))&#xa;color_playing change (white ↔ black)&#xa;joueur_actif ↔ joueur_inactif (swap)" vertex="1">
+          <mxGeometry height="56" width="420" x="340" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="note_loop_return" parent="loop_box" style="text;html=1;fontSize=10;fontStyle=2;align=center;" value="↻ retour en haut de boucle : envoi du nouveau plateau aux deux joueurs" vertex="1">
+          <mxGeometry height="20" width="500" x="290" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="note_endgame" parent="loop_box" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=10;fontStyle=2;" value="Fin de boucle (stop reçu) :&#xa;joueur1.in_game = False&#xa;joueur2.in_game = False&#xa;Partie #id_partie terminée" vertex="1">
+          <mxGeometry height="56" width="340" x="380" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="caption" parent="1" style="text;html=1;fontSize=11;fontStyle=2;align=center;" value="Figure : Diagramme de séquence du jeu d&#39;Échecs (UDP, multi-clients)" vertex="1">
+          <mxGeometry height="20" width="760" x="190" y="1360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
